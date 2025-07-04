@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paul V. Echoes</title>
+  <title>Paul v. Echoes</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -64,9 +64,56 @@
     .projects, .jams {
       margin-bottom: 2rem;
     }
+    
+    .project {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
 
-    .project, .jam {
+    .project img {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .project-info {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .jam {
       margin-bottom: 1rem;
+    }
+
+    .newsletter {
+      background: #2c2c2c;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 0.5rem;
+      width: 250px;
+      border-radius: 4px;
+      border: none;
+      margin-right: 0.5rem;
+    }
+
+    .newsletter button {
+      padding: 0.5rem 1rem;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .newsletter button:hover {
+      background-color: #ff3c30;
     }
 
     footer {
@@ -85,33 +132,48 @@
   <div class="container">
     <!-- Header: Title image and portrait -->
     <div class="header">
-      <h3>Paul V. Echoes</h3>
+      <h3>Paul v. Echoes</h3>
     </div>
 
-    <div class="intro">
-      <p>Page is still under works. Thank you for your patience!</p>
-    </div>
-    
     <!-- Intro -->
     <div class="intro">
-      <p>Hi there! I'm a fledgling game developer who loves to crunch through code, cookies and puzzles when I'm not playing or developing games. I've participated in a number of game jams and my first game is bound for release later this year - exciting times!</p>
+      <p>Hi there and welcome to my little corner on the internet!</p>
+      <p>This page is still a work in progress, but you're welcome to continue reading nonetheless!</p>
+      
+      <p>I'm a fledgling game developer who loves to crunch through code, cookies and puzzles when I'm not playing or developing games. I've participated in a number of game jams and my first game is bound for release later this year - exciting times!</p>
     </div>
 
     <!-- Released Projects -->
     <div class="projects">
       <h2>Released Projects</h2>
       <div class="project">
-        <strong>Coming Soon!</strong><br />
+        <div class="project-info">
+          <strong>Project name: Funebre Anima</strong>
+          <p>To be released later this year.</p>
+        </div>
+      </div>
+      
+      <div class="project">
+        <div class="project-info">
+          <strong>Project name: Fugue Air</strong>
+          <p>Work in progress... Revisit of an old game project with a new coat of paint.</p>
+        </div>
       </div>
     </div>
 
+    <!-- Newsletter Signup -->
+    <div class="newsletter">
+      <h2>Subscribe to My Newsletter</h2>
+      <p>Coming later this year!</p>
+    </div>
+    
     <!-- Footer / Social Links -->
     <footer>
       <div class="socials">
         <a href="https://paulvechoes.itch.io" target="_blank">itch.io</a> |
         <a href="https://x.com/PaulVEchoes" target="_blank">Twitter/X</a>
       </div>
-      <p>&copy; 2025 Paul V. Echoes. All rights reserved.</p>
+      <p>&copy; 2025 Paul v. Echoes. All rights reserved.</p>
     </footer>
   </div>
 </body>
